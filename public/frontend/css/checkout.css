@@ -1,0 +1,92 @@
+
+
+h1 {
+    color: #5d3b8f;
+    font-size: 24px;
+    margin: 0;
+}
+
+p {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.optional {
+    color: #6c757d;
+    font-weight: normal;
+}
+
+.cart-summary {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-total {
+    font-weight: bold;
+    border-top: 1px solid #ced4da;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.promo-code {
+    color: #28a745;
+}
+
+button {
+    background-color: #5d3b8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #4a2f73;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-group {
+        grid-template-columns: 1fr;
+    }
+}

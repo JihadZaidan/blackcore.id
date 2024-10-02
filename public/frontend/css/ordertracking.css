@@ -1,0 +1,114 @@
+/* Custom width for Bootstrap 5 since max-w-md doesn't exist */
+.max-w-md {
+    max-width: 50rem;
+}
+
+.step {
+    display: flex;
+    flex-grow: 1;
+    align-items: start;
+    gap: 30px 60px;
+}
+/* Step circle styles */
+.step-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem; /* Equivalent to h-9 w-9 in Tailwind */
+    height: 3rem;
+    border-radius: 50%;
+    font-weight: bold;
+    color: rgb(22, 22, 22);
+    background: lightgray;
+}
+
+.step-header {
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.step-done {
+    background: #ff0038!important;
+    color: white!important;
+}
+
+/* Equivalent to grow class in Tailwind */
+.flex-grow-1 {
+    flex-grow: 1;
+    height: 2px; /* Equivalent to h-0.5 */
+}
+
+/* Gray background for the line */
+.bg-gray {
+    background-color: #d1d5db; /* Equivalent to bg-gray-300 */
+}
+
+.step-container {
+    flex-direction: column;
+}
+/* Custom class for the active step */
+.step-active {
+    color: #ffffff !important; /* Equivalent to text-yellow-400 */
+    background: #ff0038!important;
+}
+
+
+.order-container {
+    display: flex;
+    flex-direction: row;
+}
+.progress-line {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: gray;
+    z-index: -1;
+    /* top:50% */
+}
+
+@media (min-width: 768px) { 
+    .step-line {
+        background: gray;
+        height: 4px;
+        min-height: unset;
+        width: auto;
+        flex-grow: 1;
+    }
+    .step {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        flex-direction: column;
+    }
+    .step-container {
+        flex-direction: row;
+    }
+    .step-header {
+        align-items: center;
+    }
+    .order-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .order-step-number {
+    width: 100%;
+    }
+    .progress-line {
+        position: absolute;
+        width: auto;
+        height: 4px;
+        width: 100%;
+        z-index: -1;
+        left: 50%;
+    }
+ }
+
+
+@media (min-width: 992px) {  }
+
+
+@media (min-width: 1200px) {  }
