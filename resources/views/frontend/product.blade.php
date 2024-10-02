@@ -25,7 +25,7 @@
           </div>
 
           <div class="product-details mb-3">
-            <h3>Description</h3>
+            <h3>Deskripsi</h3>
             <p id="product-description">{!! nl2br(e($product->description)) !!}</p>
           </div>
           <div class="product-size">
